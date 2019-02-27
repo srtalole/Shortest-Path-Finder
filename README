@@ -1,0 +1,78 @@
+﻿
+FOr better view, open in Notepad++
+*********************************************************************************************************************************************************************************************
+*  Project 2 | Shortest Paths in a Network  *
+*********************************************************************************************************************************************************************************************
+
+Author: SNEHAL RAMDAS TALOLE
+49er ID: 801045237
+*********************************************************************************************************************************************************************************************
+
+* INTRODUCTION
+* FILE LIST
+* Design/Implementation
+	A.  Data Structure
+	B. Programing language
+* Usage Instructions
+* References
+*********************************************************************************************************************************************************************************************
+
+I. INTRODUCTION
+------------------------------
+
+	A network that follows the OSPF (Open Shortest Path First) protocol routes packets using Dijkstra’s shortest path algorithm. 
+
+	In this project, each link has associated with the transmission time taken for data to get from the vertex at one end to the vertex at the other end. We are using the criterion of 		minimizing the total time taken for data to reach the destination to find best path. The shortest time path minimizes the sum of the transmission times of the links along the path.
+
+	The network can change dynamically based on the state of the links and the routers.
+
+
+II. FILE LIST
+------------------------------
+
+	* Graph.py		Source code for implementation of shortest path using the minimum binary heap and the Dijkstra's Algorithm implementation.
+	* README.txt		
+
+III. DESIGN/IMPLEMENTATION
+------------------------------
+
+
+A.  Data Structure
+
+	I have used following classes for a particular function:
+	
+	1. class Heap - This class implements the Shortest Paths in a Network using the minimum binary heap and the Dijkstra's Algorithm implementation.
+	2. class Vertex - This class implements the initiation or creation of the vertex of the graph; and also the up and down operation.
+	3. class Edge - This class implements the initiation or creation of the edges of the graph; and also the up and down operation.
+	4. class Graph - Reads the imputs from a file and outputs to another txt file depending upon the commands.
+	
+	main function - This is the main function which implements the required Project-2 operations specified in input file
+
+
+B. Programing language
+
+	Programing language used:
+	Python. 
+	Version: 3.6.4
+	IDE: Visual Studio Code
+
+IV. USAGE INSTRUCTIONS
+------------------------------
+
+>	Pre Requisites:	Python of specified Version(3.6.4) should be installed.
+
+>	Place the .py file and the input files in the same folder and open the CMD from that folder
+
+>	Run the following in cmd (Linux): python3 Graph.py network.txt<queries.txt>output.txt
+
+
+
+V. REFERENCES
+------------------------------
+
+1. Project instructions provided in PDF
+2. https://docs.python.org/3/tutorial/
+3. https://stackoverflow.com/
+4. https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+5. Examples provided on Canvas
+6.https://www.youtube.com/watch?v=gdmfOwyQlcI
